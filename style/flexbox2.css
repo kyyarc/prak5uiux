@@ -1,0 +1,52 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 5px;
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Baris foto */
+.row {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+/* Baris atas: 3 foto */
+.atas .foto {
+    width: calc(100% / 3);
+    height: 55px;
+}
+
+/* Baris bawah: 5 foto */
+.bawah .foto {
+    width: calc(100% / 5);
+    height: 55px;
+}
+
+/* Kotak foto */
+.foto {
+    border: 4px solid black;
+    border-radius: 9px;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+/* Gambar */
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
